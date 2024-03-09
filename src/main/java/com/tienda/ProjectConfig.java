@@ -1,4 +1,6 @@
 package com.tienda;
+// Configura la internacionalidazacion en la aplicacion Spring, y permite la resolucion y cambio de idiomas en funcion de las solicitudes del usuario mediante un message source, 
+//para acceder a los mensajes internazlidados en el codigo 
 
 import java.util.Locale;
 import org.springframework.context.MessageSource;

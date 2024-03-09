@@ -17,15 +17,15 @@ public class Categoria implements Serializable { //serializacion porque se va al
     // Información del script de la base de datos
     // Valores que agregamos en la taba de base de datos
     
-    @Id //id categoria es la llave de la tabla categoria. 
-    @GeneratedValue(strategy = GenerationType.IDENTITY) //Los valores generados que estrategia usan, identico a la BD 
-    @Column(name = "id_categoria") //decir cual es el nombre en la base de datos. Se hace la asociación 
-    private long idCategoria; // Long se usa porque se puede utilizar mas espacios en el disco, pueden hacerse muchos id...
-    private String descripcion; // String es varchar
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @Column(name = "id_categoria")
+    private Long idCategoria;
+    private String descripcion;
     private String rutaImagen;
     private boolean activo;
 
-    // Constructor con y sin parametros 
+    // Constructor con y sin parametros
     public Categoria() {
     }
 
@@ -33,6 +33,5 @@ public class Categoria implements Serializable { //serializacion porque se va al
         this.descripcion = descripcion;
         this.activo = activo;
     }
-
 }
 
